@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>राधे लक्ष्मी गोदाम - दिल्लोद, भोपाल</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #2E8B57;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #3CB371;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('farm-field.jpg');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .booking-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2E8B57;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3CB371;
+        }
+        footer {
+            background-color: #2E8B57;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        .info-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>राधे लक्ष्मी गोदाम</h1>
+        <p>दिल्लोद, भोपाल, मध्य प्रदेश</p>
+        <p>किसानों के अनाज का भंडारण एवं FCI द्वारा खरीद केंद्र</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">मुख्य पृष्ठ</a></li>
+            <li><a href="#booking">स्लॉट बुकिंग</a></li>
+            <li><a href="#rates">वर्तमान दरें</a></li>
+            <li><a href="#contact">संपर्क</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="home" class="hero">
+            <div>
+                <h2>किसान भाइयों का स्वागत है</h2>
+                <p>FCI अनुमोदित गोदाम सुविधा</p>
+            </div>
+        </section>
+        
+        <div class="info-cards">
+            <div class="card">
+                <h3>गोदाम सुविधाएं</h3>
+                <p>आधुनिक भंडारण प्रणाली</p>
+                <p>24x7 सुरक्षा</p>
+                <p>नमी नियंत्रण</p>
+            </div>
+            <div class="card">
+                <h3>खरीद प्रक्रिया</h3>
+                <p>FCI मानकों के अनुसार</p>
+                <p>पारदर्शी तौल प्रणाली</p>
+                <p>समय पर भुगतान</p>
+            </div>
+            <div class="card">
+                <h3>हमारे लाभ</h3>
+                <p>किसान हितैषी नीतियाँ</p>
+                <p>कम शुल्क</p>
+                <p>सुविधाजनक स्थान</p>
+            </div>
+        </div>
+        
+        <section id="booking" class="booking-form">
+            <h2>अनाज भंडारण स्लॉट बुकिंग</h2>
+            <form id="slotBookingForm">
+                <div class="form-group">
+                    <label for="farmerName">किसान का नाम:</label>
+                    <input type="text" id="farmerName" name="farmerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="aadharNumber">आधार नंबर:</label>
+                    <input type="text" id="aadharNumber" name="aadharNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">तिथि:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">समय:</label>
+                    <select id="time" name="time" required>
+                        <option value="">समय चुनें</option>
+                        <option value="9:00-11:00">सुबह 9:00 - 11:00</option>
+                        <option value="11:00-13:00">11:00 - 1:00 दोपहर</option>
+                        <option value="14:00-16:00">दोपहर 2:00 - 4:00</option>
+                        <option value="16:00-18:00">शाम 4:00 - 6:00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="grainType">अनाज का प्रकार:</label>
+                    <select id="grainType" name="grainType" required>
+                        <option value="">चुनें</option>
+                        <option value="गेहूं">गेहूं</option>
+                        <option value="चावल">चावल</option>
+                        <option value="सोयाबीन">सोयाबीन</option>
+                        <option value="मक्का">मक्का</option>
+                        <option value="दाल">दाल</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="estimatedQuantity">अनुमानित मात्रा (क्विंटल में):</label>
+                    <input type="number" id="estimatedQuantity" name="estimatedQuantity" required>
+                </div>
+                <button type="submit">स्लॉट बुक करें</button>
+            </form>
+        </section>
+        
+        <section id="rates">
+            <h2>वर्तमान खरीद दरें</h2>
+            <table style="width:100%; border-collapse: collapse; margin-top:20px;">
+                <tr style="background-color: #2E8B57; color:white;">
+                    <th style="padding:10px; text-align:left;">अनाज</th>
+                    <th style="padding:10px; text-align:left;">न्यूनतम समर्थन मूल्य (प्रति क्विंटल)</th>
+                </tr>
+                <tr style="background-color: white;">
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">गेहूं</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">₹2,015</td>
+                </tr>
+                <tr style="background-color: #f9f9f9;">
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">चावल (सामान्य)</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">₹1,940</td>
+                </tr>
+                <tr style="background-color: white;">
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">सोयाबीन</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">₹3,950</td>
+                </tr>
+                <tr style="background-color: #f9f9f9;">
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">मक्का</td>
+                    <td style="padding:10px; border-bottom:1px solid #ddd;">₹1,870</td>
+                </tr>
+            </table>
+            <p style="margin-top:10px; font-style:italic;">नोट: दरें सरकारी नीति के अनुसार बदल सकती हैं</p>
+        </section>
+        
+        <section id="contact" style="margin-top:30px;">
+            <h2>संपर्क करें</h2>
+            <div style="background-color:white; padding:20px; border-radius:5px;">
+                <p><strong>पता:</strong> ग्राम - दिल्लोद, जिला - भोपाल, मध्य प्रदेश 462046</p>
+                <p><strong>मोबाइल:</strong> +91 98765 43210</p>
+                <p><strong>ईमेल:</strong> info@radhelaxmiwarehouse.com</p>
+                <p><strong>काम के घंटे:</strong> सोमवार से शनिवार, सुबह 9:00 से शाम 6:00 तक</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2023 राधे लक्ष्मी गोदाम. सर्वाधिकार सुरक्षित.</p>
+        <p>FCI अनुमोदित गोदाम सुविधा</p>
+    </footer>
+
+    <script>
+        document.getElementById('slotBookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const farmerName = document.getElementById('farmerName').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const grainType = document.getElementById('grainType').value;
+            const estimatedQuantity = document.getElementById('estimatedQuantity').value;
+            
+            // Here you would typically send this data to a server
+            // For demo, we'll just show an alert
+            alert(`स्लॉट बुकिंग सफल!\n\nकिसान: ${farmerName}\nतिथि: ${date}\nसमय: ${time}\nअनाज: ${grainType}\nमात्रा: ${estimatedQuantity} क्विंटल`);
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
